@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title></title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body>
+		<header class="">
+			header
+		</header>
+
+		<main class="main">
+			<section class="section">
+				<h2>Section, Figure, Figcaption, Picture, Source</h2>
+				<figure class="figure">
+					<picture>
+						<source src="images/269791.webp" type="image/webp" />
+						<source src="images/19100801.371499.5920.jpg" type="image/jpeg" />
+						<img class="figure__image" src="images/19100801.371499.5920.jpg" alt="My Hero" />
+				</picture>
+						<figcaption class="figure__legend">My Hero</figcaption>
+				</figure>
+			</section>
+
+			<section class="section">
+				<h2>Section, Article</h2>
+				<article>
+					<h3>Philosophy</h3>
+					<p>This guide’s purpose is to explain the mental model to have when using React Router. We call it “Dynamic Routing”, which is quite different from the “Static Routing” you’re probably more familiar with.</p>
+				</article>
+			</section>
+
+			<section class="section">
+				<aside>
+					Продам гараж 050 149 35 38
+					<bdi>
+						بيع المرآب
+					</bdi>
+				</aside>
+			</section>
+
+			<section class="section">
+				<audio src="media/melnica_-_volkodav_(zvukoff.ru).mp3" controls></audio>
+			</section>
+
+			<section class="section">
+				<input type="text" list="car-model">
+				<datalist id="car-model">
+					<option value="BMW">
+					<option value="Aleksandrovich_mobil">
+					<option value="Mercedes">
+					<option value="Lada">
+				</datalist>
+			</section>
+
+			<section class="section">
+				<details>
+					<summary>Click to open</summary>
+					<p>If your browser supports this element, it should allow you to expand and collapse these details.</p>
+				</details>
+			</section>
+
+			<section class="section">
+				<dialog id="myFirstDialog" style="width:50%;background-color:#F4FFEF;border:1px dotted black;">
+					<p><q>The world is full of magical things patiently waiting for our wits to grow sharper.</q> - <cite>Bertrand Russell</cite></p>
+					<button id="hide">Close</button>
+				</dialog>
+				<!-- "Show" button -->
+				<button id="show">Show Dialog</button>
+				<script type="text/JavaScript">
+					(function() {  
+    var dialog = document.getElementById('myFirstDialog');  
+    document.getElementById('show').onclick = function() {  
+        dialog.show();  
+    };  
+    document.getElementById('hide').onclick = function() {  
+        dialog.close();  
+    };  
+})(); 
+</script>
+			</section>
+
+			<section class="section">
+				<p>Despite the stockmarket<wbr> crash in 2008, the value of my<wbr> share portfolio <mark>increased by 100 percent</mark>. I must be doing<wbr> something right.</p>
+				<p>I should point out that<wbr> the value only increased because I kept pumping more money in!</p>
+
+			</section>
+			<section class="section">
+				<script type="text/javascript">
+				function changeColor( thisColor ) {
+					document.getElementById( 'myPic' ).style.borderColor = thisColor;
+				}
+				</script>
+				<img id="myPic" src="images/19100801.371499.5920.jpg" contextmenu="photoMenu" style="float:left;border:10px solid black; width: 200px;">
+				<p style="width:100px;float:left;padding-left:18px;">Right click on the image to invoke the context menu. <strong>Note</strong>: Only supported in Firefox at time of writing.</>
+					<menu type="context" id="photoMenu">
+						<menu label="Change Border Color...">
+							<menuitem label="Black (default)" onclick="changeColor('black');">
+							</menuitem>
+							<menuitem label="Orange" onclick="changeColor('orange');">
+							</menuitem>
+							<menuitem label="Red" onclick="changeColor('red');">
+							</menuitem>
+							<menuitem label="Green" onclick="changeColor('green');">
+							</menuitem>
+							<menuitem label="Blue" onclick="changeColor('blue');">
+							</menuitem>
+						</menu>
+					</menu>
+			</section>
+
+			<section class="section">
+				<ol>
+					<li><meter min="0" max="100" value="25">25%</meter></li>
+					<li><meter min="100" max="200" value="150">50%</meter></li>
+					<li><meter min="0" max="100" value="75">75%</meter></li>
+					<li><meter min="0" max="800" value="400">50%</meter></li>
+				</ol>
+				<dl>
+					<dt>Width:</dt>
+					<dd><meter min="0" max="200" value="123" title="millimeters">123mm</meter></dd>
+					<dt>Height:</dt>
+					<dd><meter min="0" max="100" value="25" optimum="30" title="millimeters">25mm</meter></dd>
+				</dl>
+			</section>
+
+			<section class="section">
+				<form onsubmit="return false" oninput="amount.value = (principal.valueAsNumber * rate.valueAsNumber) / 100">
+					<fieldset>
+						<legend style="font-weight:bold;">Interest Calculator</legend>
+						<label for="principal">Amount to invest: $</label>
+						<input type="number" min="0" id="principal" name="principal" value="1000">
+						<p><label for="rate">Interest Rate: </label>
+							<input type="range" min="0" max="20" id="rate" name="rate" value="0" oninput="thisRate.value = rate.value">
+							<output name="thisRate" for="rate">0</output><span>%</span></p>
+						<p>Interest Received: <strong>$<output name="amount" for="principal rate">0</output></strong></p>
+					</fieldset>
+				</form>
+			</section>
+
+			<section class="section">
+				Downloading now. Progress...
+				<progress value="250" max="1000">
+					<span id="downloadProgress">25</span>%
+				</progress>
+			</section>
+
+			<section class="section">
+				<!-- Template Content -->
+				<template id="myTemplate">
+					<p>Template content. Click again...</p>
+				</template>
+
+				<!-- Normal Content -->
+				<div id="normalContent">
+					<p>Normal content</p>
+				</div>
+
+				<!-- JavaScript function: Clones the template and appends it to the normal content -->
+				<button onclick="useTemplate();">Click Me to Use the Template!</button>
+				<script>
+					function useTemplate( ) {
+					var myTemplate = document.getElementById( 'myTemplate' ),
+						normalContent = document.getElementById( 'normalContent' ),
+						clonedTemplate = myTemplate.content.cloneNode( true );
+					normalContent.appendChild( clonedTemplate );
+				}
+				</script>
+			</section>
+
+			<section class="section">
+				<p>On Saturdays, we open at <time>09:00</time>.</p>
+
+				<p>The concert is <time datetime="2009-02-18">next Wednesday</time>.</p>
+
+				<p>We finally hit the road at <time datetime="2009-02-17T05:00-07:00">5am last Tuesday</time>.</p>
+			</section>
+
+			<section class="section">
+				<video autobuffer autoloop loop controls style="width: 300px;">
+					<track src="media/xxx.vtt" kind="subtitles" srclang="en" label="English">
+					<source src="media/pass-countdown.ogg">
+					<object type="video/ogg" data="media/pass-countdown.ogg" width="300" height="200">
+						<param name="src" value="media/pass-countdown.ogg">
+						<param name="autoplay" value="false">
+						<param name="autoStart" value="0">
+						<p><a href="media/pass-countdown.ogg">Download this video file.</a></p>
+					</object>
+				</video>
+			</section>
+
+			<section class="section">
+				<canvas id="myCanvas" width="300" height="200">Your browser does not support the canvas tag. At the time of writing, Firefox, Opera, and Chrome support this tag.</p>
+				</canvas>
+				<script type="application/x-javascript">
+				function displayCanvas( ) {
+					var canvas = document.getElementById( "myCanvas" );
+					if ( canvas.getContext ) {
+						var ctx = canvas.getContext( "2d" );
+
+						ctx.fillStyle = "rgb(200,0,0)";
+						ctx.fillRect( 0, 0, 150, 75 );
+
+						ctx.fillStyle = "rgba(0, 0, 200, 0.5)";
+						ctx.fillRect( 40, 30, 125, 75 );
+
+						ctx.fillStyle = "rgb(0,0,150)";
+						ctx.strokeRect( 20, 20, 50, 100 );
+					}
+				}
+				displayCanvas( );
+				</script>
+			</section>
+
+			<section class="section">
+				<embed type="video/ogg" src="media/pass-countdown.ogg" style="width:320px;">
+			</section>
+		</main>
+
+
+		<footer>
+			footer
+		</footer>
+
+
+		<!-- 
+		
+			<aside> Defines content aside from the page content
+				<audio> Defines sound content
+					<bdi> Isolates a part of text that might be formatted in a different direction from other text outside it
+						<canvas> Used to draw graphics, on the fly, via scripting (usually JavaScript)
+							<datalist> Specifies a list of pre-defined options for input controls
+								<details> Defines additional details that the user can view or hide
+									<dialog> Defines a dialog box or window
+										<embed> Defines a container for an external (non-HTML) application
+										<figcaption> Defines a caption for a <figure> element
+												<figure> Specifies self-contained content
+
+
+													<main> Specifies the main content of a document
+														<mark> Defines marked/highlighted text
+															<menuitem> Defines a command/menu item that the user can invoke from a popup menu
+															<meter> Defines a scalar measurement within a known range (a gauge)
+																<nav> Defines navigation links
+																	<output> Defines the result of a calculation
+																		<picture> Defines a container for multiple image resources
+																			<progress> Represents the progress of a task
+
+																				<source> Defines multiple media resources for media elements (<video> and <audio>)
+																						<summary> Defines a visible heading for a <details> element
+																								<template> Defines a template
+																									<time> Defines a date/time
+																										<track> Defines text tracks for media elements (<video> and <audio>)
+																												<video> Defines a video or movie
+																													<wbr> Defines a possible line-break
+ -->
+
+
+	</body>
+
+</html>

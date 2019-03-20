@@ -1,0 +1,93 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.menu__list {
+  list-style: none;
+}
+.menu__link {
+  text-decoration: none;
+}
+.main {
+  display: flex;
+  flex-flow: row wrap;
+}
+.section {
+  position: relative;
+  display: inline-block;
+  width: 400px;
+  margin: 6px;
+  padding: 24px;
+  background-image: linear-gradient(45deg, #ccc, #eee);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.figure {
+  display: inline-block;
+  margin: 0;
+  max-height: 100%;
+  max-width: 100%;
+}
+.figure__image {
+  border-radius: 6px;
+  max-height: 100%;
+  max-width: 100%;
+}
+.figure__legend {
+  text-align: center;
+  font-style: italic;
+}
+.ul > li {
+  list-style-type: none;
+  position: relative;
+}
+.ul > li:before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  background-color: black;
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  margin-left: -17px;
+  margin-top: 3px;
+}
+.ul ol {
+  list-style-type: lower-roman;
+}
+.table {
+  border-collapse: collapse;
+  margin: 4px auto 0;
+}
+.table td {
+  empty-cells: show;
+  min-width: 48px;
+  box-sizing: border-box;
+  padding: 1px 6px;
+}
+.table,
+.table td {
+  border: 1px solid black;
+}
+.table .x {
+  min-width: 72px;
+}
+.table .c {
+  text-align: center;
+}
+.table .l {
+  text-align: left;
+}
+.table .r {
+  text-align: right;
+}
+.form {
+  box-sizing: border-box;
+  padding: 4px 12px;
+}
+.form .label {
+  display: block;
+  margin: 6px 0;
+}
